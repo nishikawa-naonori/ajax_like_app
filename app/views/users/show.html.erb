@@ -1,2 +1,8 @@
-<h2><%= @blog.title %></h2>
-<div><%= @blog.body %></div>
+<%#= binding.pry %>
+
+
+<% @blogs.each do |blog| %>
+  <hr>
+  <a href="/blogs/"><%= blog.title %></a>
+  <hr>
+<% end %>
